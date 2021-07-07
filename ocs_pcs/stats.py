@@ -94,8 +94,8 @@ print()
 
 print("="*80)
 print("PCS averaged across all relations:")
-print("& \multicolumn{2}{c}{OCS} & \multicolumn{2}{c}{PCS} \\\\")
-print("model & inside & outside & inside & outside\\\\\\hline")
+print("& \multicolumn{2}{c}{PCS} \\\\")
+print("model & inside & outside \\\\\\hline")
 for model in totals:
     print(model, end='')
     for metric in ['pcs']:
