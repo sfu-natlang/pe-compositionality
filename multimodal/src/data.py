@@ -88,7 +88,7 @@ class ImageDictionary(Dictionary):
                 vec = Image.open(path).resize( (self.size, self.size) )
                 vec = ImageOps.invert(vec)
                 vec = transforms.ToTensor()(vec)
-            else if VERBOSE:
+            elif VERBOSE:
                 print("WARN: no image for", word)
 
             self.memo[word] = vec
